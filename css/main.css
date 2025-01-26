@@ -1,50 +1,38 @@
-
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 header {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
+
+#work {
+  height: 100vh;
+  margin-bottom: 170px;
+}
+
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    padding: 20px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
 }
-.gallery-item {
-    background: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+
+.gallery img,
+.gallery video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 20px 0;
+  border: 1.5px solid #b2b2b2;
 }
-.gallery-item img, 
-.gallery-item video {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
-.gallery-item video {
-    max-height: 300px;
-}
+
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-    margin-top: 20px;
-}
-@media (max-width: 600px) {
-    .gallery {
-        grid-template-columns: 1fr;
-    }
-    .gallery-item video {
-        max-height: 200px;
-    }
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
 }
